@@ -1,0 +1,301 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body class="bg-white">
+	<div class="col-12 mx-auto "> 
+<div class="input-group">
+  <input type="text" style="display: none" class="form-control inpe" placeholder="WOULD YOU BUY IT" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+  <div class="input-group-append inps" id="button-addon4" style="display: none">
+    <button class="btn btn-outline-secondary yes" type="button">YES YES</button>
+    <button class="btn btn-outline-secondary no" type="button">NO NO</button>
+  </div>
+</div>
+</div>
+		<h1>Money: <span class="score">2000</span>$</h1>
+		<div class="col-3">
+			<h4>Брось кость!</h4>
+			<img src="cube.png" class="w-50 kost end">
+		</div>
+		<h2 style="margin-left: 75px">Start</h2>
+		<!--первый ряд-->
+		<div class="row">
+			<div class="col-1 bg-white px-5 py-3 border border-success text-center start" style="background-image: url(game_player.png); background-size: 100% 100%; margin-left: 75px;">
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow  ulisa">
+				1
+				улица фтл
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa ">
+				2
+				улица 202
+				200 руб
+			</div>	
+			<div class="col-1 px-5 py-5 border bg-danger red ulisa">
+				3
+				улица мкр
+				250 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa ">
+				4
+				улица улица 
+			    200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa ">
+				5
+				улица строителей
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-success grin ulisa">
+				6
+				улица федорова
+				150 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-danger red ulisa ">
+						7
+						улица коркина
+						250 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa">
+				8
+				улица халтурина
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa">
+				9
+				улица строителей
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-danger free ulisa ">
+				10
+				бесплатна парковочная
+			</div>
+		</div>
+		<!--второй ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5  border bg-warning luck ulisa" style="margin-left: 75px;">
+				25
+				улица счастья
+				+1000 руб
+			</div>
+			
+			<div class="col-1 px-5 py-5  border bg-success grin ulisa " style="margin-left: 1162px;">
+				11
+				улица якутск
+				150 руб
+			</div>
+		</div>
+		<!--третий ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5 border bg-danger red ulisa" style="margin-left: 75px;">
+				24
+				улица мак
+				250 руб
+			</div>
+		
+			<div class="col-1 px-5 py-5 border bg-warning yellow " style="margin-left: 1162px;">
+				12
+				улица киэфси
+				200 руб
+			</div>
+		</div>
+		<!--четвертый ряд-->
+		<div class="row">
+			<div class="col-1 px-5 py-5 border bg-success reset" style="margin-left: 75px;">
+				stair to the heaven
+			</div>
+			<div class="col-1 px-5 py-5 border bg-danger red ulisa ">
+				22
+				улица бургег кинк
+				250 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa">
+				21
+				улица мориох
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-success grin ulisa ">
+				20
+				улица ньюйорк
+				150 руб
+			</div>	
+			<div class="col-1 px-5 py-5 border bg-danger red ulisa ">
+				19
+				улица оффников
+				250 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa ">
+				18
+				улица спремевская
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-success  grin ulisa">
+				17
+				улица ноут
+				150 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-danger  red ulisa">		
+				16
+				улица ленин
+				250 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-warning yellow ulisa">
+				15
+				улица сталин
+				200 руб
+			</div>
+			<div class="col-1 px-5 py-5 border bg-success grin ulisa">
+				14
+				улица пушкина
+				150 руб
+			</div>
+			<div class="col-1  px-5 py-5 border bg-danger reset">
+				ресет pucci
+			</div>			
+		</div>	
+	</div>
+	<script type="text/javascript">
+		let buy = document.querySelector(".yes")
+		let nebuy = document.querySelector(".no")
+		let ulisi = document.querySelectorAll(".ulisa")
+		let reed = document.querySelectorAll(".red")
+		let green = document.querySelectorAll(".grin")
+		let yelow = document.querySelectorAll(".yellow")
+		let holes = document.querySelectorAll(".reset")
+		let vop = document.querySelectorAll(".que")
+		let que = document.querySelectorAll(".quest")
+		let score = 2000
+		let yes = 1
+		let kra = 0
+		let gre = 0
+		let yel = 0
+		document.querySelector(".kost").onclick = function(){
+			if (score<0) {
+				alert("GAY OVER")
+			}
+			else{
+				let rand = Math.random() * 6
+				let round = Math.round(rand)
+				alert(round)
+				yes = yes - 1
+			}
+		}
+		for(let index = 0; index<6; index = index + 1){
+			reed[index].onclick = function(){
+				reed[index].style.backgroundImage = "url(game_player.png)"
+				reed[index].style.backgroundSize = "100% 100%"
+				let time = function() {
+					reed[index].style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)
+				if (yes == 0) {
+					document.querySelector(".inps").style.display = "block"
+					document.querySelector(".inpe").style.display = "block"
+				}
+						buy.onclick = function(){
+							if (yes == 0) {
+								score = score - 250
+								document.querySelector(".score").innerHTML = score
+								yes = yes + 1
+								document.querySelector(".inpe").style.display = "none"
+								document.querySelector(".inps").style.display = "none"
+							}
+						}
+						nebuy.onclick = function(){
+							document.querySelector(".inps").style.display = "none"
+							document.querySelector(".inpe").style.display = "none"
+							yes = yes + 1
+						}
+					}		
+					}	
+		for(let index = 0; index<5; index = index + 1){
+			green[index].onclick = function(){
+				green[index].style.backgroundImage = "url(game_player.png)"
+				green[index].style.backgroundSize = "100% 100%"
+				let time = function(){
+					green[index].style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)
+				if (yes == 0) {
+					document.querySelector(".inps").style.display = "block"
+					document.querySelector(".inpe").style.display = "block"
+				}
+						buy.onclick = function(){
+							if (yes == 0) {
+								score = score - 150
+								document.querySelector(".score").innerHTML = score
+								yes = yes + 1
+								document.querySelector(".inps").style.display = "none"
+								document.querySelector(".inpe").style.display = "none"
+							}
+					}
+						nebuy.onclick = function(){
+							document.querySelector(".inps").style.display = "none"
+							document.querySelector(".inpe").style.display = "none"
+							yes = yes + 1
+						}
+			}
+		}
+		for(let index = 0; index<10; index = index + 1){
+			yelow[index].onclick = function(){
+				yelow[index].style.backgroundImage = "url(game_player.png)"
+				yelow[index].style.backgroundSize = "100% 100%"
+				let time = function(){
+					yelow[index].style.backgroundImage = "none"
+				}
+				setTimeout(time,500)
+				if (yes == 0) {
+					document.querySelector(".inps").style.display = "block"
+					document.querySelector(".inpe").style.display = "block"
+				}
+						buy.onclick = function(){
+							if (yes == 0) {
+								score = score - 200
+								document.querySelector(".score").innerHTML = score
+								yes = yes + 1
+								document.querySelector(".inps").style.display = "none"
+								document.querySelector(".inpe").style.display = "none"
+							}
+					}
+						nebuy.onclick = function(){
+							document.querySelector(".inps").style.display = "none"
+							document.querySelector(".inpe").style.display = "none"
+							yes = yes + 1
+						}
+			}
+		}
+		for(let index = 0; index<2; index = index + 1){
+			holes[index].onclick = function(){
+				holes[index].style.backgroundImage = "url(game_player.png)"
+				holes[index].style.backgroundSize = "100% 100%"
+				let time = function(){
+					holes[index].style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)
+				location.reload();
+			}
+		}
+			document.querySelector(".luck").onclick = function(){
+				document.querySelector(".luck").style.backgroundImage = "url(game_player.png)"
+				document.querySelector(".luck").style.backgroundSize = "100% 100%"
+				score = score + 1000
+				document.querySelector(".score").innerHTML = score
+				let time = function(){
+					document.querySelector(".luck").style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)
+			}
+			document.querySelector(".free").onclick = function(){
+				document.querySelector(".free").style.backgroundImage = "url(game_player.png)"
+				document.querySelector(".free").style.backgroundSize = "100% 100%"
+				let time = function(){
+					document.querySelector(".free").style.backgroundImage = "none"
+				}
+				setTimeout(time,2000)
+			}	
+	</script>
+	</body>
+	</html>
